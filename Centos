@@ -50,7 +50,7 @@ JDK Installation
 
 sudo mv jdk-11.0.2_linux-x64_bin.tar.gz /opt
 
-tar -xvf jdk-11.0.2_linux-x64_bin.tar.gz
+sudo tar -xvf jdk-11.0.2_linux-x64_bin.tar.gz
 
 sudo alternatives --install /usr/bin/jar jar /opt/jdk-11.0.2/bin/jar 1
 sudo alternatives --install /usr/bin/javac javac /opt/jdk-11.0.2/bin/javac 1
@@ -60,7 +60,7 @@ sudo alternatives --set javac /opt/jdk-11.0.2/bin/javac
 
 
 cd /etc/profile.d/
-vi java.sh
+sudo vi java.sh
 export JRE_HOME=/opt/jdk-11.0.2/jre
 export PATH=$PATH:$JRE_HOME/bin
 export JAVA_HOME=/opt/jdk-11.0.2
